@@ -1,0 +1,175 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMYC1lQpPNjUvFfFWdV6lYO",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/maja3216/ai-course/blob/main/Lekcja%206\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 4,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pAFkH2FfQBZI",
+        "outputId": "ce383488-337f-4df8-84b8-dc1f1a541323"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello\n",
+            "liczba: 10, średnia: 5.5\n",
+            "<class 'int'>\n"
+          ]
+        }
+      ],
+      "source": [
+        "num = 10\n",
+        "float_num = 5.50\n",
+        "text = \"Hello\"\n",
+        "bool_variable = False\n",
+        "\n",
+        "print(text)\n",
+        "print(f\"liczba: {num}, średnia: {float_num}\")\n",
+        "print(type(num))"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "games = [\"Fortnite\", \"Hogwart Legacy\", \"The Sims 4\"]\n",
+        "print(games)\n",
+        "print(games[0])\n",
+        "\n",
+        "games.append(\"GTA\")\n",
+        "print(games)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "B9zeaWPBdbbT",
+        "outputId": "56b68f2c-bc40-4fbd-b242-75ead4513822"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Fortnite', 'Hogwart Legacy', 'The Sims 4']\n",
+            "Fortnite\n",
+            "['Fortnite', 'Hogwart Legacy', 'The Sims 4', 'GTA']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(int(\"011110\", 2))\n",
+        "print(int(\"FF\", 16))"
+      ],
+      "metadata": {
+        "id": "fGbKPbKEeulH"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "temperature = float(input(\"Podaj temperaturę: \"))\n",
+        "\n",
+        "if temperature < 20:\n",
+        "  print(\"Podwyższam temperaturę\")\n",
+        "elif temperature > 22:\n",
+        "  print(\"Wyłączam się\")\n",
+        "else:\n",
+        "  print(\"Temperatura w normie\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hwRD-uTffnJJ",
+        "outputId": "7aac0afe-2f94-4921-cdc4-717cbd66e658"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Podaj temperaturę: 20\n",
+            "Temperatura w normie\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for game in games:\n",
+        "  print(game)\n",
+        "\n",
+        "\n",
+        "for i in range(-8, 19, 3):\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YLgrxHzzhAya",
+        "outputId": "1c0ddb1a-49b1-4ca4-e2b6-9962f1b88669"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Fortnite\n",
+            "Hogwart Legacy\n",
+            "The Sims 4\n",
+            "GTA\n",
+            "-8\n",
+            "-5\n",
+            "-2\n",
+            "1\n",
+            "4\n",
+            "7\n",
+            "10\n",
+            "13\n",
+            "16\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
